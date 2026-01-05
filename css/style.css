@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+.tableSite {
+  display: flex;
+  justify-content: center;
+}
+
+.tableSite table {
+  width: 920px;
+  display: grid;
+}
+
+.tableSite thead,
+.tableSite tbody {
+  display: contents;
+}
+
+.tableSite tr {
+  display: grid;
+  grid-template-columns: 230px 120px 160px 1fr;
+}
+
+.tableSite th,
+.tableSite td {
+  border: 1px solid #a2a9b1;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #202122;
+  background: #f8f9fa;
+}
+
+.tableSite th {
+  background: #eaecf0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tableSite td:nth-child(2),
+.tableSite td:nth-child(3) {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tableSite .edition-title {
+  grid-template-columns: 1fr;
+}
+
+.tableSite .edition-title td {
+  grid-column: 1 / -1;
+  background: #eaecf0;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+}
