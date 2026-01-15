@@ -1,88 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Таблица</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div class="tableSite">
-      <table>
-        <thead>
-        </thead>
-        <tbody>
-          <tr class="edition-title">
-            <td colspan="4">Pocket Edition</td>
-          </tr>
-          <tr>
-            <td>Pocket Edition</td>
-            <td>1.0.7</td>
-            <td>-</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-          </tr>
+<head>
+<meta charset="UTF-8">
+<title>Wiki Table</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
 
-          <tr class="edition-title">
-            <td colspan="4">Bedrock Edition</td>
-          </tr>
-          <tr>
-            <td>Bedrock Edition</td>
-            <td>1.10.0</td>
-            <td>beta 1.10.0.3</td>
-            <td>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt.</td>
-          </tr>
-          <tr>
-            <td>Bedrock Edition</td>
-            <td>1.11.0</td>
-            <td>beta 1.11.0.4</td>
-            <td>Ut enim ad minim veniam, quis nostrud exercitation.</td>
-          </tr>
-          <tr>
-            <td>Bedrock Edition</td>
-            <td>1.17.0</td>
-            <td>beta 1.17.0.50</td>
-            <td>Duis aute irure dolor in reprehenderit in voluptate.</td>
-          </tr>
+<body>
 
-          <tr class="edition-title">
-            <td colspan="4">Legacy Console Edition</td>
-          </tr>
-          <tr>
-            <td>Legacy Console Edition</td>
-            <td>TU1</td>
-            <td>Patch 1</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-          </tr>
-          <tr>
-            <td>Legacy Console Edition</td>
-            <td>TU11</td>
-            <td>Patch 2</td>
-            <td>Sed ut perspiciatis unde omnis iste natus error.</td>
-          </tr>
-          <tr>
-            <td>Legacy Console Edition</td>
-            <td>TU14</td>
-            <td>Patch 3</td>
-            <td>Nemo enim ipsam voluptatem quia voluptas sit.</td>
-          </tr>
-          <tr>
-            <td>Legacy Console Edition</td>
-            <td>TU43</td>
-            <td>Patch 13</td>
-            <td>Neque porro quisquam est qui dolorem ipsum.</td>
-          </tr>
+<table class="wikitable">
 
-          <tr class="edition-title">
-            <td colspan="4">New Nintendo 3DS Edition</td>
-          </tr>
-          <tr>
-            <td>New Nintendo 3DS Edition</td>
-            <td>0.1.0</td>
-            <td>-</td>
-            <td>Lorem ipsum dolor sit amet, sed do eiusmod tempor.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </body>
+  <tr>
+    <th class="edition" colspan="6">Pocket Edition</th>
+  </tr>
+  <tr>
+    <td class="ver" colspan="4">1.0.7</td>
+    <td class="desc" colspan="2">Added new painting canvas ‘Wither’.</td>
+  </tr>
+
+  <tr>
+    <th class="edition" colspan="6">Bedrock Edition</th>
+  </tr>
+  <tr>
+    <td class="ver">1.10.0</td>
+    <td class="ver">beta 1.10.0.3</td>
+    <td class="desc" colspan="4">The item texture of paintings has been changed.</td>
+  </tr>
+  <tr>
+    <td class="ver">1.11.0</td>
+    <td class="ver">beta 1.11.0.4</td>
+    <td class="desc" colspan="4">Paintings can now be bought from shepherd villagers.</td>
+  </tr>
+  <tr>
+    <td class="ver">1.17.0</td>
+    <td class="ver">beta 1.17.0.50</td>
+    <td class="desc" colspan="4">The painting back texture has been updated.</td>
+  </tr>
+
+  <tr>
+    <th class="edition" colspan="6">Legacy Console Edition</th>
+  </tr>
+
+  <tr>
+    <td class="ver legacy-first">TU1</td>
+    <td class="ver legacy">CU1</td>
+    <td class="ver legacy">1.0</td>
+    <td class="ver legacy-last">Patch 1</td>
+    <td class="desc" colspan="2">Added paintings.</td>
+  </tr>
+  <tr>
+    <td class="legacy-first"></td>
+    <td class="legacy"></td>
+    <td class="legacy"></td>
+    <td class="legacy-last"></td>
+    <td class="desc" colspan="2">
+      There are currently 25 canvases, which can be viewed at
+      Legacy Console Edition history of textures/Paintings.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ver legacy-first">TU11</td>
+    <td class="legacy"></td>
+    <td class="ver legacy">1.01</td>
+    <td class="legacy-last"></td>
+    <td class="desc" colspan="2">
+      The limit for paintings in a world has been increased.
+    </td>
+  </tr>
+  <tr>
+    <td class="legacy-first"></td>
+    <td class="legacy"></td>
+    <td class="legacy"></td>
+    <td class="legacy-last"></td>
+    <td class="desc" colspan="2">
+      A message is now displayed when the maximum paintings are reached.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="ver legacy-first">TU14</td>
+    <td class="legacy"></td>
+    <td class="ver legacy">1.04</td>
+    <td class="legacy-last"></td>
+    <td class="desc" colspan="2">Added new painting canvas ‘Wither’.</td>
+  </tr>
+
+  <tr>
+    <td class="ver legacy-first">TU43</td>
+    <td class="ver legacy">CU33</td>
+    <td class="ver legacy">1.36</td>
+    <td class="ver legacy-last">Patch 13</td>
+    <td class="desc" colspan="2">Added sounds for paintings.</td>
+  </tr>
+
+
+  <tr>
+    <th class="edition" colspan="6">New Nintendo 3DS Edition</th>
+  </tr>
+  <tr>
+    <td class="ver" colspan="4">0.1.0</td>
+    <td class="desc" colspan="2">Added paintings.</td>
+  </tr>
+  <tr>
+    <td colspan="4"></td>
+    <td class="desc" colspan="2">
+      There are currently 25 canvases, which can be viewed at
+      New Nintendo 3DS Edition history of textures/Paintings.
+    </td>
+  </tr>
+
+</table>
+
+</body>
 </html>

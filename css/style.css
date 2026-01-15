@@ -1,57 +1,59 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
+  background: #fff;
+  padding: 20px;
 }
 
-.tableSite {
-  display: flex;
-  justify-content: center;
-}
-
-.tableSite table {
-  width: 920px;
-  display: grid;
-}
-
-.tableSite thead,
-.tableSite tbody {
-  display: contents;
-}
-
-.tableSite tr {
-  display: grid;
-  grid-template-columns: 230px 120px 160px 1fr;
-}
-
-.tableSite th,
-.tableSite td {
+.wikitable {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  border-collapse: collapse;
   border: 1px solid #a2a9b1;
-  padding: 8px 10px;
   font-size: 14px;
   color: #202122;
+}
+
+.wikitable th,
+.wikitable td {
+  border: 1px solid #a2a9b1;
+  padding: 8px 10px;
+  vertical-align: middle;
   background: #f8f9fa;
 }
 
-.tableSite th {
+.edition {
   background: #eaecf0;
-  font-weight: bold;
   text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  color: #0645ad;
 }
 
-.tableSite td:nth-child(2),
-.tableSite td:nth-child(3) {
+.ver {
   text-align: center;
+  font-weight: 600;
+  color: #0645ad;
   white-space: nowrap;
 }
 
-.tableSite .edition-title {
-  grid-template-columns: 1fr;
+.desc {
+  font-weight: 400;
 }
 
-.tableSite .edition-title td {
-  grid-column: 1 / -1;
-  background: #eaecf0;
-  font-weight: bold;
-  text-align: center;
-  font-style: italic;
+.legacy {
+  border-left: none;
+  border-right: none;
+}
+
+.legacy-first {
+  border-left: none;
+}
+
+.legacy-last {
+  border-right: 1px solid #a2a9b1;
+}
+
+.no-left {
+  border-left: none;
 }
